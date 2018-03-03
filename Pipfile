@@ -1,0 +1,21 @@
+[[source]]
+
+name = "pypi"
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+
+[packages]
+
+google-auth = "*"
+google-api-python-client = "*"
+attrs = "*"
+ics = "*"
+pyyaml = "*"
+requests = "*"
+ibis = "*"
+"google-auth-httplib2" = "*"
+
+
+[dev-packages]
+
