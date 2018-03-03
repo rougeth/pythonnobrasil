@@ -2,6 +2,8 @@ language: python
 python:
   - '3.6'
 
+cache: pip
+
 env:
   - LC_ALL="pt_BR.UTF-8" LC_CTYPE="pt_BR.UTF-8"
 
