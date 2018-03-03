@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python no Brasil</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="calendar">
+    {% for month in calendar.values() %}
+    <div class="month">
+      <div class="month-name">{{ month.abbr }}</div>
+      {% if month.events %}
+      <ul>
+        {% for event in month.events %}
+          {% if event.start.month == event.end.month %}
+            <a href="{{ event.url }}"><li>{{ event.name }}<span>{{ event.start.day}} a {{ event.end.day }}</span></li></a>
+          {% else %}
+            <a href="{{ event.url }}"><li>{{ event.name }}<span>{{ event.start.day}}/{{ event.start.month }} a {{ event.end.day }}/{{ event.end.month }}</span></li></a>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  <footer>
+    <img class="python-logo" src="logo.png"/></div>
+    <span class="footer-title">Eventos Python no <span class="country">Brasil</span> em <span class="current-year">2018</span></span>
+    <a href="#">Adicionar evento</a>
+    <a href="https://calendar.google.com/calendar/embed?src=rougeth.com_c8svci8915203fpkumcifmgh7k%40group.calendar.google.com&ctz=America%2FSao_Paulo">Incorporar agenda</a>
+    <span class="space"></span>
+    <span class="made-with">Made with <span><3</span> by <a href="https://rgth.co">Marco Rougeth</a>.</span>
+  </footer>
+</body>
+</html>
