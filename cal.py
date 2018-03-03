@@ -79,7 +79,7 @@ class GoogleCalendar(Calendar):
 
     @property
     def credentials(self):
-        return Credentials.from_service_account_info(
+        return Credentials.from_service_account_file(
             config.GOOGLE_API_AUTH, scopes=self.GOOGLE_API_SCOPES)
 
     @property
