@@ -21,3 +21,27 @@
   end: 2018-5-26
   location: Paraíba, PB
   url: https://2018.pythonnordeste.org/
+
+- name: Django Girls Porto Alegre
+  start: 2018-3-23
+  end: 2018-4-24
+  location: Porto Alegre, RS
+  url: https://www.djangogirls.org/portoalegre
+
+- name: Django Girls Santa Maria
+  start: 2018-4-06
+  end: 2018-4-07
+  location: Santa Maria, RS
+  url: https://www.djangogirls.org/santamaria
+
+- name: Django Girls Canoas
+  start: 2018-5-4
+  end: 2018-5-5
+  location: Canoas, RS
+  url: https://www.djangogirls.org/canoas
+
+- name: Django Girls Bento Gonçalves
+  start: 2018-5-19
+  end: 2018-5-19
+  location: Bento Gonçalves, RS
+  url: https://www.djangogirls.org/bentogoncalves
