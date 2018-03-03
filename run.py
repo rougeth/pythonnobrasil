@@ -21,7 +21,7 @@ def get_template():
 
 def get_context(calendar):
     # Set locale to pt_BR so that month_abbr uses Portugues
-    locale.setlocale(locale.LC_ALL, 'pt_BR')
+    locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
     events = {}
     for month_number in range(1, 13):
