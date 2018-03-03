@@ -3,7 +3,10 @@ import locale
 from calendar import month_abbr
 
 import ibis
+
+import deploy
 from cal import GoogleCalendar, YamlCalendar
+
 
 
 def prepare_build():
@@ -66,6 +69,9 @@ def main():
 
     prepare_build()
     build_html(local_calendar)
+
+    zip = deploy.make_zip('build')
+    deploy.push(zip)
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import attr
 import yaml
@@ -109,6 +109,8 @@ class GoogleCalendar(Calendar):
             self.events.append(event)
 
     def _get_payload(self, event):
+        one_day = timedelta(days=1)
+        end_date = event.end + one_day
         return {
             'summary': event.name,
             'location': event.location,
@@ -117,7 +119,7 @@ class GoogleCalendar(Calendar):
                 'date': event.start.strftime(DATE_FORMAT),
             },
             'end': {
-                'date': event.end.strftime(DATE_FORMAT),
+                'date': end_date.strftime(DATE_FORMAT),
             },
         }
 
