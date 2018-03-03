@@ -1,0 +1,17 @@
+- name: Python Brasil
+  start: 2018-10-17
+  end: 2018-10-22
+  location: Natal, RN
+  url: https://pythonbrasil.org.br
+
+- name: Python Sul
+  start: 2018-4-6
+  end: 2018-4-8
+  location: Florianópolis, SC
+  url: http://pythonsul.org
+
+- name: Python Sudeste
+  start: 2018-3-31
+  end: 2018-4-1
+  location: São Paulo, SP
+  url: http://pythonsudeste.org/
