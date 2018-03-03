@@ -79,9 +79,8 @@ class GoogleCalendar(Calendar):
 
     @property
     def credentials(self):
-        return Credentials.from_service_account_file(
-            config.GOOGLE_API_AUTHORIZED_USER_FILE,
-            scopes=self.GOOGLE_API_SCOPES)
+        return Credentials.from_service_account_info(
+            config.GOOGLE_API_AUTH, scopes=self.GOOGLE_API_SCOPES)
 
     @property
     def google_client(self):
