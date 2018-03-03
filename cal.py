@@ -2,8 +2,8 @@ from datetime import datetime
 
 import attr
 import yaml
-from googleapiclient import discovery
 from google.oauth2.service_account import Credentials
+from googleapiclient import discovery
 from ics import Calendar as ICSCalendar, Event as ICSEvent
 
 import config
@@ -105,10 +105,11 @@ class GoogleCalendar(Calendar):
                 location=event_data.get('location'),
                 url=event_data.get('description'),
             )
+            event.google_id = event_data['id']
 
             self.events.append(event)
 
-    def _create_payload(self, event):
+    def _get_payload(self, event):
         return {
             'summary': event.name,
             'location': event.location,
@@ -124,7 +125,16 @@ class GoogleCalendar(Calendar):
     def create_event(self, event):
         client = self.google_client.events()
 
-        payload = self._create_payload(event)
+        payload = self._get_payload(event)
         event = client.insert(calendarId=config.GOOGLE_API_CALENDAR_ID,
+                              body=payload).execute()
+        # TODO: log request
+
+    def update_event(self, old_event, new_event):
+        client = self.google_client.events()
+
+        payload = self._get_payload(new_event)
+        event = client.update(calendarId=config.GOOGLE_API_CALENDAR_ID,
+                              eventId=old_event.google_id,
                               body=payload).execute()
         # TODO: log request
