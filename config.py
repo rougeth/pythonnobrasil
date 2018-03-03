@@ -14,3 +14,8 @@ GOOGLE_API_AUTH = {
   'auth_provider_x509_cert_url': os.environ.get('GOOGLE_AUTH_PROVIDER'),
   'auth_provider_x509_cert_url': os.environ.get('GOOGLE_AUTH_CERT_URL'),
 }
+
+
+NETLIFY_TOKEN = os.environ.get('NETLIFY_TOKEN')
+NETLIFY_SITE_ID = os.environ.get('NETLIFY_SITE_ID')
+NETLIFY_API = os.environ.get('NETLIFY_API')
