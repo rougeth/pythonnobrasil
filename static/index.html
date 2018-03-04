@@ -15,11 +15,7 @@
       {% if month.events %}
       <ul>
         {% for event in month.events %}
-          {% if event.start.month == event.end.month %}
-            <a href="{{ event.url }}"><li>{{ event.name }}<span>{{ event.start.day}} a {{ event.end.day }}</span></li></a>
-          {% else %}
-            <a href="{{ event.url }}"><li>{{ event.name }}<span>{{ event.start.day}}/{{ event.start.month }} a {{ event.end.day }}/{{ event.end.month }}</span></li></a>
-          {% endif %}
+          <a href="{{ event.url }}"><li>{{ event.name }}<span>{{ event.date_range }}</span></li></a>
         {% endfor %}
       </ul>
       {% endif %}

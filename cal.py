@@ -39,6 +39,18 @@ class Event:
 
         return different_fields
 
+    @property
+    def date_range(self):
+        if self.start.month != self.end.month:
+            return '{} a {}'.format(self.start.strftime('%d/%m'),
+                                    self.end.strftime('%d/%m'))
+
+        delta = self.end - self.start
+        if delta.days > 0:
+            return '{} a {}'.format(self.start.day, self.end.day)
+
+        return self.start.day
+
 
 class Calendar:
     def __getitem__(self, key):
