@@ -116,7 +116,10 @@ class GoogleCalendar(Calendar):
                 location=event_data.get('location'),
                 url=event_data.get('description'),
             )
+
             event.google_id = event_data['id']
+            if event.end:
+                event.end = event.end - timedelta(days=1)
 
             self.events.append(event)
 

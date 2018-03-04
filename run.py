@@ -52,12 +52,13 @@ def create_or_update(local_calendar, google_calendar):
         gevent = google_calendar.get(event.name)
 
         if not gevent:
+            print('Novo evento: %s' % event.name)
             google_calendar.create_event(event)
             continue
 
-        need_update = gevent - event
-        if need_update:
-            print('need to update: %s' % need_update)
+        fields_changed = gevent - event
+        if fields_changed:
+            print('Atualizando %s: %s' % (event.name, fields_changed))
             google_calendar.update_event(gevent, event)
 
 
