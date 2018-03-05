@@ -12,7 +12,7 @@ O primeiro passo é criar um `fork` desse respositório na sua conta do Github. 
 
 ### 2. Adicionar novo evento na agenda
 
-Para adicionar um novo evento na agendar e no site [eventos.python.org.br](https://eventos.python.org.br), basta alterar o arquivo `conferences.yaml` com os dados do seu evento. É preciso preencher nome, data que o evento começa e termina no padrão yyyy-mm-dd, local onde vai acontecer e url do site. Você usar o modelo abaixo como exemplo:
+Para adicionar um novo evento na agendar e no site [eventos.python.org.br](https://eventos.python.org.br), basta alterar o arquivo `conferencias.yaml` com os dados do seu evento. É preciso preencher nome, data que o evento começa e termina no padrão yyyy-mm-dd, local onde vai acontecer e url do site. Você usar o modelo abaixo como exemplo:
 
 ```yaml
 - name: PyConBrasil 2006

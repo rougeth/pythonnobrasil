@@ -15,7 +15,10 @@ pyyaml = "*"
 requests = "*"
 ibis = "*"
 "google-auth-httplib2" = "*"
+python-decouple = "*"
 
 
 [dev-packages]
+ipython = "*"
+ipdb = "*"
 

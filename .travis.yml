@@ -16,4 +16,4 @@ install:
   - pipenv install
 
 script:
-  - pipenv run python run.py
+  - pipenv run python pythonnobrasil/run.py

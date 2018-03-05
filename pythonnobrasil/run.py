@@ -1,21 +1,27 @@
 import shutil
 import locale
 from calendar import month_abbr
+from pathlib import Path
 
 import ibis
 
+import config
 import deploy
 from cal import GoogleCalendar, YamlCalendar
 
 
 
 def prepare_build():
-    shutil.rmtree('./build', ignore_errors=True)
-    shutil.copytree('./static', './build')
+    build_path = str(config.BASE_DIR / 'build')
+    static_path = str(config.BASE_DIR / 'static')
+
+    shutil.rmtree(build_path, ignore_errors=True)
+    shutil.copytree(static_path, build_path)
 
 
 def get_template():
-    with open('static/index.html') as index_file:
+    index = config.BASE_DIR / 'static/index.html'
+    with index.open() as index_file:
         return ibis.Template(index_file.read())
 
 
@@ -43,7 +49,8 @@ def build_html(calendar):
     template = get_template()
     content = template.render({'calendar': context})
 
-    with open('build/index.html', 'w') as index_file:
+    index = config.BASE_DIR / 'build/index.html'
+    with index.open(mode='w') as index_file:
         index_file.write(content)
 
 
@@ -63,7 +70,9 @@ def create_or_update(local_calendar, google_calendar):
 
 
 def main():
-    local_calendar = YamlCalendar('conferences.yaml')
+    conferencias = config.BASE_DIR.parent / 'conferencias.yaml'
+
+    local_calendar = YamlCalendar(conferencias)
     google_calendar = GoogleCalendar()
 
     create_or_update(local_calendar, google_calendar)
@@ -71,8 +80,8 @@ def main():
     prepare_build()
     build_html(local_calendar)
 
-    zip = deploy.make_zip('build')
-    deploy.push(zip)
+    # zip = deploy.make_zip('build')
+    # deploy.push(zip)
 
 
 if __name__ == '__main__':

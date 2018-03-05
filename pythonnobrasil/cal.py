@@ -74,7 +74,7 @@ class YamlCalendar(Calendar):
         self.fetch(path)
 
     def fetch(self, path):
-        with open(path) as events_file:
+        with path.open() as events_file:
             events = yaml.load(events_file.read())
 
         for event_data in events:
