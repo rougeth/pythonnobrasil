@@ -1,8 +1,8 @@
-import os
+from decouple import config
 
-GOOGLE_API_AUTH = os.environ.get('GOOGLE_API_AUTH', 'google_auth.json')
-GOOGLE_API_CALENDAR_ID = os.environ.get('GOOGLE_API_CALENDAR_ID')
+GOOGLE_API_AUTH = config('GOOGLE_API_AUTH', default='google_auth.json')
+GOOGLE_API_CALENDAR_ID = config('GOOGLE_API_CALENDAR_ID')
 
-NETLIFY_TOKEN = os.environ.get('NETLIFY_TOKEN')
-NETLIFY_SITE_ID = os.environ.get('NETLIFY_SITE_ID')
-NETLIFY_API = os.environ.get('NETLIFY_API')
+NETLIFY_TOKEN = config('NETLIFY_TOKEN')
+NETLIFY_SITE_ID = config('NETLIFY_SITE_ID')
+NETLIFY_API = config('NETLIFY_API')
