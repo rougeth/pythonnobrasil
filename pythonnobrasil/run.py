@@ -80,8 +80,8 @@ def main():
     prepare_build()
     build_html(local_calendar)
 
-    # zip = deploy.make_zip('build')
-    # deploy.push(zip)
+    zip = deploy.make_zip('build')
+    deploy.push(zip)
 
 
 if __name__ == '__main__':

@@ -7,9 +7,11 @@ import requests
 
 import config
 
+NETLIFY_API = 'https://api.netlify.com/api/v1'
+
 
 def make_zip(path):
-    build_folder = Path(path)
+    build_folder = config.BASE_DIR / path
     filenames = [f for f in build_folder.iterdir() if not f.name.startswith('.')]
 
     buffer = io.BytesIO()
@@ -29,6 +31,9 @@ def push(zip):
         'access_token': config.NETLIFY_TOKEN,
     }
 
-    url = '{}/sites/{}/deploys'.format(config.NETLIFY_API,
-                                       config.NETLIFY_SITE_ID)
+    url = '{}/sites/{}/deploys'.format(NETLIFY_API, config.NETLIFY_SITE_ID)
     response = requests.post(url, data=zip, headers=headers, params=params)
+
+    error = response.json()['error_message']
+    if error:
+        print(error)
