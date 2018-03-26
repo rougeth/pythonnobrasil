@@ -46,6 +46,12 @@
   location: Paraíba, PB
   url: https://2018.pythonnordeste.org/
 
+- name: Caipyra 2018
+  start: 2018-6-8
+  end: 2018-6-11
+  location: São Carlos, SP
+  url: http://caipyra.python.org.br
+
 - name: AfroPython - Wakanda
   start: 2018-8-11
   end: 2018-8-11
