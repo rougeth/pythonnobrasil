@@ -1,14 +1,8 @@
-- name: Python Brasil
-  start: 2018-10-17
-  end: 2018-10-22
-  location: Natal, RN
-  url: https://2018.pythonbrasil.org.br
-
-- name: Python Sul
-  start: 2018-4-6
-  end: 2018-4-8
-  location: Florianópolis, SC
-  url: http://pythonsul.org
+- name: Django Girls Porto Alegre
+  start: 2018-3-23
+  end: 2018-3-24
+  location: Porto Alegre, RS
+  url: https://www.djangogirls.org/portoalegre
 
 - name: Python Sudeste
   start: 2018-3-30
@@ -16,23 +10,17 @@
   location: São Paulo, SP
   url: http://pythonsudeste.org/
 
-- name: Python Nordeste
-  start: 2018-5-24
-  end: 2018-5-26
-  location: Paraíba, PB
-  url: https://2018.pythonnordeste.org/
-
-- name: Django Girls Porto Alegre
-  start: 2018-3-23
-  end: 2018-3-24
-  location: Porto Alegre, RS
-  url: https://www.djangogirls.org/portoalegre
-
 - name: Django Girls Santa Maria
   start: 2018-4-6
   end: 2018-4-7
   location: Santa Maria, RS
   url: https://www.djangogirls.org/santamaria
+
+- name: Python Sul
+  start: 2018-4-6
+  end: 2018-4-8
+  location: Florianópolis, SC
+  url: http://pythonsul.org
 
 - name: Django Girls Canoas
   start: 2018-5-4
@@ -40,23 +28,35 @@
   location: Canoas, RS
   url: https://www.djangogirls.org/canoas
 
-- name: Django Girls Bento Gonçalves
-  start: 2018-5-19
-  end: 2018-5-19
-  location: Bento Gonçalves, RS
-  url: https://www.djangogirls.org/bentogoncalves
-
 - name: AfroPython - Palmares
   start: 2018-5-12
   end: 2018-5-12
   location: Porto Alegre, RS
   url: https://www.facebook.com/AfroPython/
 
+- name: Django Girls Bento Gonçalves
+  start: 2018-5-19
+  end: 2018-5-19
+  location: Bento Gonçalves, RS
+  url: https://www.djangogirls.org/bentogoncalves
+
+- name: Python Nordeste
+  start: 2018-5-24
+  end: 2018-5-26
+  location: Paraíba, PB
+  url: https://2018.pythonnordeste.org/
+
 - name: AfroPython - Wakanda
   start: 2018-8-11
   end: 2018-8-11
   location: Porto Alegre, RS
   url: https://www.facebook.com/AfroPython/
+
+- name: Python Brasil
+  start: 2018-10-17
+  end: 2018-10-22
+  location: Natal, RN
+  url: https://2018.pythonbrasil.org.br
 
 - name: AfroPython 2018
   start: 2018-11-23
