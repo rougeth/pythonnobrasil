@@ -9,6 +9,12 @@
   end: 2018-4-1
   location: São Paulo, SP
   url: http://pythonsudeste.org/
+  
+ - name: 4° PyData BSB
+   start: 2018-4-6
+   end: 2018-4-6
+   location: Brasília, DF
+   url: https://www.meetup.com/pt-BR/PyData-Brasilia/events/249137931/
 
 - name: Django Girls Santa Maria
   start: 2018-4-6
