@@ -75,3 +75,9 @@
   end: 2018-11-24
   location: Porto Alegre, RS
   url: https://www.facebook.com/AfroPython/
+
+- name: Flask Conference
+  start: 2018-08-24
+  end: 2018-08-25
+  location: São Paulo, SP
+  url: http://flask.python.org.br
