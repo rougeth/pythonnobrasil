@@ -46,6 +46,24 @@
   location: Bento Gonçalves, RS
   url: https://www.djangogirls.org/bentogoncalves
 
+- name: Django Girls Passo Fundo
+  start: 2018-9-29
+  end: 2018-9-29
+  location: Passo Fundo, RS
+  url: https://www.djangogirls.org/passofundo
+
+- name: Django Girls Pelotas
+  start: 2018-10-6
+  end: 2018-10-6
+  location: Pelotas, RS
+  url: https://www.djangogirls.org/pelotas
+
+- name: Aniversário 2 anos PyLadies Porto Alegre
+  start: 2018-6-16
+  end: 2018-6-16
+  location: Porto Alegre, RS
+  url: https://pyladiespoa.pythonanywhere.com
+
 - name: Python Nordeste
   start: 2018-5-24
   end: 2018-5-26
