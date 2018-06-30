@@ -58,6 +58,30 @@
   location: São Carlos, SP
   url: http://caipyra.python.org.br
 
+- name: Just Python
+  start: 2018-7-14
+  end: 2018-7-14
+  location: São Paulo, SP
+  url: http://justpython.style
+
+- name: TDC SP (Trilha Python)
+  start: 2018-7-21
+  end: 2018-7-21
+  location: São Paulo, SP
+  url: http://bit.ly/TdcPython
+
+- name: Python do zero #sóparamulheres
+  start: 2018-7-27
+  end: 2018-7-27
+  location: São Paulo, SP
+  url: http://bit.ly/PythonDoZero
+
+- name: Django Girls São Paulo
+  start: 2018-7-28
+  end: 2018-7-28
+  location: São Paulo, SP
+  url: http://bit.ly/PythonDoZero
+
 - name: AfroPython - Wakanda
   start: 2018-8-11
   end: 2018-8-11
