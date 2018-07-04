@@ -57,6 +57,12 @@
   end: 2018-6-11
   location: São Carlos, SP
   url: http://caipyra.python.org.br
+  
+- name: 7° PyData BSB
+  start: 2018-7-4
+  end: 2018-7-4
+  location: Brasília, DF
+  url: https://www.meetup.com/pt-BR/PyData-Brasilia/events/252167449/
 
 - name: Just Python
   start: 2018-7-14
