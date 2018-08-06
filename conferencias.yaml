@@ -117,3 +117,9 @@
   end: 2018-09-01
   location: Curitiba, PR 
   url: http://scipyla.org/conf/2018/ 
+
+- name: Python Cerrado 
+  start: 2018-09-29
+  end: 2018-09-30
+  location: Brasília, DF
+  url: http://2018.pythoncerrado.org/
