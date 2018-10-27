@@ -125,7 +125,13 @@
   url: http://2018.pythoncerrado.org/
   
 - name: PyData Porto Alegre
-  start: 2018-11-17
-  end: 2018-11-17
+  start: 2018-11-08
+  end: 2018-11-08
+  location: Porto Alegre, RS
+  url: https://www.meetup.com/pt-BR/PyData-Porto-Alegre/
+  
+- name: PyData Porto Alegre
+  start: 2018-12-15
+  end: 2018-12-15
   location: Porto Alegre, RS
   url: https://www.meetup.com/pt-BR/PyData-Porto-Alegre/
