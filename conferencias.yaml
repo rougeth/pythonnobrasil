@@ -9,7 +9,7 @@
   end: 2018-4-1
   location: São Paulo, SP
   url: http://pythonsudeste.org/
-  
+
 - name: 4° PyData BSB
   start: 2018-4-6
   end: 2018-4-6
@@ -46,24 +46,6 @@
   location: Bento Gonçalves, RS
   url: https://www.djangogirls.org/bentogoncalves
 
-- name: Django Girls Passo Fundo
-  start: 2018-9-29
-  end: 2018-9-29
-  location: Passo Fundo, RS
-  url: https://www.djangogirls.org/passofundo
-
-- name: Django Girls Pelotas
-  start: 2018-10-6
-  end: 2018-10-6
-  location: Pelotas, RS
-  url: https://www.djangogirls.org/pelotas
-
-- name: Aniversário 2 anos PyLadies Porto Alegre
-  start: 2018-6-16
-  end: 2018-6-16
-  location: Porto Alegre, RS
-  url: https://pyladiespoa.pythonanywhere.com
-
 - name: Python Nordeste
   start: 2018-5-24
   end: 2018-5-26
@@ -75,7 +57,13 @@
   end: 2018-6-11
   location: São Carlos, SP
   url: http://caipyra.python.org.br
-  
+
+- name: Aniversário 2 anos PyLadies Porto Alegre
+  start: 2018-6-16
+  end: 2018-6-16
+  location: Porto Alegre, RS
+  url: https://pyladiespoa.pythonanywhere.com
+
 - name: 7° PyData BSB
   start: 2018-7-4
   end: 2018-7-4
@@ -112,6 +100,18 @@
   location: Porto Alegre, RS
   url: https://www.facebook.com/AfroPython/
 
+- name: Django Girls Passo Fundo
+  start: 2018-9-29
+  end: 2018-9-29
+  location: Passo Fundo, RS
+  url: https://www.djangogirls.org/passofundo
+
+- name: Django Girls Pelotas
+  start: 2018-10-6
+  end: 2018-10-6
+  location: Pelotas, RS
+  url: https://www.djangogirls.org/pelotas
+
 - name: Python Brasil
   start: 2018-10-17
   end: 2018-10-22
@@ -130,24 +130,24 @@
   location: São Paulo, SP
   url: http://flask.python.org.br
 
-- name: SciPy LA 
+- name: SciPy LA
   start: 2018-08-29
   end: 2018-09-01
-  location: Curitiba, PR 
-  url: http://scipyla.org/conf/2018/ 
+  location: Curitiba, PR
+  url: http://scipyla.org/conf/2018/
 
-- name: Python Cerrado 
+- name: Python Cerrado
   start: 2018-09-29
   end: 2018-09-30
   location: Brasília, DF
   url: http://2018.pythoncerrado.org/
-  
+
 - name: PyData Porto Alegre
   start: 2018-11-08
   end: 2018-11-08
   location: Porto Alegre, RS
   url: https://www.meetup.com/pt-BR/PyData-Porto-Alegre/
-  
+
 - name: PyData Porto Alegre
   start: 2018-12-15
   end: 2018-12-15
