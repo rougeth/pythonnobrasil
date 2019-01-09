@@ -11,7 +11,7 @@ google-auth = "*"
 google-api-python-client = "*"
 attrs = "*"
 ics = "*"
-pyyaml = "*"
+pyyaml = ">=4.2b1"
 requests = "*"
 ibis = "*"
 "google-auth-httplib2" = "*"
@@ -21,4 +21,3 @@ python-decouple = "*"
 [dev-packages]
 ipython = "*"
 ipdb = "*"
-
