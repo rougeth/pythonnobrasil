@@ -153,3 +153,9 @@
   end: 2018-12-15
   location: Porto Alegre, RS
   url: https://www.meetup.com/pt-BR/PyData-Porto-Alegre/
+  
+- name: Python Sudeste 2019
+  start: 2019-4-26
+  end: 2019-4-28
+  location: Vitória, ES
+  url: http://2019.pythonsudeste.org/
