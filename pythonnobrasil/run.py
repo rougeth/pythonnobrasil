@@ -1,6 +1,7 @@
 import shutil
 import locale
 from calendar import month_abbr
+from datetime import datetime
 from pathlib import Path
 
 import ibis
@@ -9,6 +10,8 @@ import config
 import deploy
 from cal import GoogleCalendar, YamlCalendar
 
+
+TODAY = datetime.today()
 
 
 def prepare_build():
@@ -37,8 +40,9 @@ def get_context(calendar):
         }
 
     for event in calendar.events:
-        month = event.start.month
-        events[month]['events'].append(event)
+        if event.start.year == TODAY.year:
+            month = event.start.month
+            events[month]['events'].append(event)
 
     return events
 
@@ -47,7 +51,10 @@ def build_html(calendar):
     context = get_context(calendar)
 
     template = get_template()
-    content = template.render({'calendar': context})
+    content = template.render({
+        'calendar': context,
+        'today': TODAY,
+    })
 
     index = config.BASE_DIR / 'build/index.html'
     with index.open(mode='w') as index_file:
