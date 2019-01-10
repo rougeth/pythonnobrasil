@@ -154,14 +154,14 @@
   location: Porto Alegre, RS
   url: https://www.meetup.com/pt-BR/PyData-Porto-Alegre/
   
+- name: PyCommunities Experience
+  start: 2019-01-26
+  end: 2019-01-26
+  location: Belo Horizonte, MG
+  url: https://pycommunitiesexperience.github.io/
+  
 - name: Python Sudeste 2019
   start: 2019-4-26
   end: 2019-4-28
   location: Vitória, ES
   url: http://2019.pythonsudeste.org/
-  
-- name: PyCommunities Experience
-  start: 2006-01-26
-  end: 2006-01-26
-  location: Belo Horizonte, MG
-  url: https://pycommunitiesexperience.github.io/
