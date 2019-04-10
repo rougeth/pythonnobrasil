@@ -15,7 +15,7 @@
       {% if month.events %}
       <ul>
         {% for event in month.events %}
-          <a href="{{ event.url }}"><li>{{ event.name }}<span>{{ event.date_range }}</span></li></a>
+          <a href="{{ event.url }}" rel="noopener noreferrer" target="_blank"><li>{{ event.name }}<span>{{ event.date_range }}</span></li></a>
         {% endfor %}
       </ul>
       {% endif %}
