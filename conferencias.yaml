@@ -165,3 +165,9 @@
   end: 2019-4-28
   location: Vitória, ES
   url: http://2019.pythonsudeste.org/
+
+- name: Python Brasil
+  start: 2019-10-23
+  end: 2019-10-28
+  location: Ribeirão Preto, SP
+  url: https://2019.pythonbrasil.org.br
