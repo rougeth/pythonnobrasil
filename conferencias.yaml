@@ -184,6 +184,12 @@
   location: Recife, PE
   url: https://2019.pythonnordeste.org/
   
+- name: PyCon Amazônia 2019
+  start: 2019-08-03
+  end: 2019-08-04
+  location: Porto Velho, RO
+  url: https://amazonia.python.org.br/
+  
 - name: Python Brasil
   start: 2019-10-23
   end: 2019-10-28
