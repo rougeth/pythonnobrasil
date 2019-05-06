@@ -172,6 +172,12 @@
   location: Feira de Santana, BA
   url: http://www.pythonforall.com.br
   
+- name: Caipyra 2019
+  start: 2019-06-07
+  end: 2019-06-10
+  location: São Carlos, SP
+  url: https://caipyra.python.org.br/
+  
 - name: Python Brasil
   start: 2019-10-23
   end: 2019-10-28
