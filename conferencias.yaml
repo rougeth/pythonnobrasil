@@ -153,24 +153,18 @@
   end: 2018-12-15
   location: Porto Alegre, RS
   url: https://www.meetup.com/pt-BR/PyData-Porto-Alegre/
-  
+
 - name: PyCommunities Experience
   start: 2019-01-26
   end: 2019-01-26
   location: Belo Horizonte, MG
   url: https://pycommunitiesexperience.github.io/
-  
+
 - name: Python Sudeste 2019
   start: 2019-4-26
   end: 2019-4-28
   location: Vitória, ES
   url: http://2019.pythonsudeste.org/
-  
-- name: Python For All 2019
-  start: 2019-6-1
-  end: 2019-6-2
-  location: Feira de Santana, BA
-  url: http://www.pythonforall.com.br
 
 - name: Caipyra 2019
   start: 2019-06-07
@@ -183,13 +177,13 @@
   end: 2019-07-21
   location: Recife, PE
   url: https://2019.pythonnordeste.org/
-  
+
 - name: PyCon Amazônia 2019
   start: 2019-08-03
   end: 2019-08-04
   location: Porto Velho, RO
   url: https://amazonia.python.org.br/
-  
+
 - name: Python Brasil
   start: 2019-10-23
   end: 2019-10-28
