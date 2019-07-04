@@ -189,6 +189,12 @@
   end: 2019-08-04
   location: Porto Velho, RO
   url: https://amazonia.python.org.br/
+  
+- name: PyCaxias 2019
+  start: 2019-08-17
+  end: 2019-08-17
+  location: Caxias, RS
+  url: https://pycaxias.org/
 
 - name: Python Brasil
   start: 2019-10-23
