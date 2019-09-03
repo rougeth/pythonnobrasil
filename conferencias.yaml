@@ -201,3 +201,10 @@
   end: 2019-10-28
   location: Ribeirão Preto, SP
   url: https://2019.pythonbrasil.org.br
+  
+- name: Python Cerrado 2019
+  start: 2019-09-05
+  end: 2019-09-05
+  location: Goiânia, GO
+  url: http://pythoncerrado.grupy.goiania.br
+
