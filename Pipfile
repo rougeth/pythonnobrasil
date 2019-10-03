@@ -21,3 +21,4 @@ python-decouple = "*"
 [dev-packages]
 ipython = "*"
 ipdb = "*"
+pytest = "*"
