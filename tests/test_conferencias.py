@@ -1,7 +1,7 @@
-import yaml
+import toml
 
 
-def test_yaml():
-    with open('conferencias.yaml') as file:
-        confs = yaml.load(file, Loader=yaml.SafeLoader)
+def test_toml():
+    filepath = 'conferencias.toml'
+    confs = toml.load(filepath)
     assert confs

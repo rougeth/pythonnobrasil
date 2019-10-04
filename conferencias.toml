@@ -1,0 +1,251 @@
+[[events]]
+name = "Django Girls Porto Alegre"
+start = 2018-03-23
+end = 2018-03-24
+location = "Porto Alegre, RS"
+url = "https://www.djangogirls.org/portoalegre"
+
+[[events]]
+name = "Python Sudeste"
+start = 2018-03-30
+end = 2018-04-01
+location = "São Paulo, SP"
+url = "http://pythonsudeste.org/"
+
+[[events]]
+name = "4° PyData BSB"
+start = 2018-04-06
+end = 2018-04-06
+location = "Brasília, DF"
+url = "https://www.meetup.com/pt-BR/PyData-Brasilia/events/249137931/"
+
+[[events]]
+name = "Django Girls Santa Maria"
+start = 2018-04-06
+end = 2018-04-07
+location = "Santa Maria, RS"
+url = "https://www.djangogirls.org/santamaria"
+
+[[events]]
+name = "Python Sul"
+start = 2018-04-06
+end = 2018-04-08
+location = "Florianópolis, SC"
+url = "http://pythonsul.org"
+
+[[events]]
+name = "Django Girls Canoas"
+start = 2018-05-04
+end = 2018-05-05
+location = "Canoas, RS"
+url = "https://www.djangogirls.org/canoas"
+
+[[events]]
+name = "AfroPython - Palmares"
+start = 2018-05-12
+end = 2018-05-12
+location = "Porto Alegre, RS"
+url = "https://www.facebook.com/AfroPython/"
+
+[[events]]
+name = "Django Girls Bento Gonçalves"
+start = 2018-05-19
+end = 2018-05-19
+location = "Bento Gonçalves, RS"
+url = "https://www.djangogirls.org/bentogoncalves"
+
+[[events]]
+name = "Python Nordeste"
+start = 2018-05-24
+end = 2018-05-26
+location = "Paraíba, PB"
+url = "https://2018.pythonnordeste.org/"
+
+[[events]]
+name = "Caipyra 2018"
+start = 2018-06-08
+end = 2018-06-11
+location = "São Carlos, SP"
+url = "http://caipyra.python.org.br"
+
+[[events]]
+name = "Aniversário 2 anos PyLadies Porto Alegre"
+start = 2018-06-16
+end = 2018-06-16
+location = "Porto Alegre, RS"
+url = "https://pyladiespoa.pythonanywhere.com"
+
+[[events]]
+name = "7° PyData BSB"
+start = 2018-07-04
+end = 2018-07-04
+location = "Brasília, DF"
+url = "https://www.meetup.com/pt-BR/PyData-Brasilia/events/252167449/"
+
+[[events]]
+name = "Just Python"
+start = 2018-07-14
+end = 2018-07-14
+location = "São Paulo, SP"
+url = "http://justpython.style"
+
+[[events]]
+name = "TDC SP (Trilha Python)"
+start = 2018-07-21
+end = 2018-07-21
+location = "São Paulo, SP"
+url = "http://www.thedevelopersconference.com.br/tdc/2018/saopaulo/trilhas"
+
+[[events]]
+name = "Python do zero"
+start = 2018-07-27
+end = 2018-07-27
+location = "São Paulo, SP"
+url = "https://www.eventbrite.com.br/e/python-do-zero-soparamulheres-tickets-47237842659"
+
+[[events]]
+name = "Django Girls São Paulo"
+start = 2018-07-28
+end = 2018-07-28
+location = "São Paulo, SP"
+url = "https://djangogirls.org/saopaulo/"
+
+[[events]]
+name = "AfroPython - Wakanda"
+start = 2018-08-11
+end = 2018-08-11
+location = "Porto Alegre, RS"
+url = "https://www.facebook.com/AfroPython/"
+
+[[events]]
+name = "Django Girls Passo Fundo"
+start = 2018-09-29
+end = 2018-09-29
+location = "Passo Fundo, RS"
+url = "https://www.djangogirls.org/passofundo"
+
+[[events]]
+name = "Django Girls Pelotas"
+start = 2018-10-06
+end = 2018-10-06
+location = "Pelotas, RS"
+url = "https://www.djangogirls.org/pelotas"
+
+[[events]]
+name = "Python Brasil"
+start = 2018-10-17
+end = 2018-10-22
+location = "Natal, RN"
+url = "https://2018.pythonbrasil.org.br"
+
+[[events]]
+name = "AfroPython 2018"
+start = 2018-11-23
+end = 2018-11-24
+location = "Porto Alegre, RS"
+url = "https://www.facebook.com/AfroPython/"
+
+[[events]]
+name = "Flask Conference"
+start = 2018-08-24
+end = 2018-08-25
+location = "São Paulo, SP"
+url = "http://flask.python.org.br"
+
+[[events]]
+name = "SciPy LA"
+start = 2018-08-29
+end = 2018-09-01
+location = "Curitiba, PR"
+url = "http://scipyla.org/conf/2018/"
+
+[[events]]
+name = "Python Cerrado"
+start = 2018-09-29
+end = 2018-09-30
+location = "Brasília, DF"
+url = "http://2018.pythoncerrado.org/"
+
+[[events]]
+name = "PyData Porto Alegre"
+start = 2018-11-08
+end = 2018-11-08
+location = "Porto Alegre, RS"
+url = "https://www.meetup.com/pt-BR/PyData-Porto-Alegre/"
+
+[[events]]
+name = "PyData Porto Alegre"
+start = 2018-12-15
+end = 2018-12-15
+location = "Porto Alegre, RS"
+url = "https://www.meetup.com/pt-BR/PyData-Porto-Alegre/"
+
+[[events]]
+name = "PyCommunities Experience"
+start = 2019-01-26
+end = 2019-01-26
+location = "Belo Horizonte, MG"
+url = "https://pycommunitiesexperience.github.io/"
+
+[[events]]
+name = "Python Sudeste 2019"
+start = 2019-04-26
+end = 2019-04-28
+location = "Vitória, ES"
+url = "http://2019.pythonsudeste.org/"
+
+[[events]]
+name = "PySM 2019"
+start = 2019-06-01
+end = 2019-06-01
+location = "Santa Maria, RS"
+url = "http://pysm.github.io/"
+
+[[events]]
+name = "Caipyra 2019"
+start = 2019-06-07
+end = 2019-06-10
+location = "São Carlos, SP"
+url = "https://caipyra.python.org.br/"
+
+[[events]]
+name = "Python Nordeste"
+start = 2019-07-19
+end = 2019-07-21
+location = "Recife, PE"
+url = "https://2019.pythonnordeste.org/"
+
+[[events]]
+name = "PyCon Amazônia 2019"
+start = 2019-08-03
+end = 2019-08-04
+location = "Porto Velho, RO"
+url = "https://amazonia.python.org.br/"
+
+[[events]]
+name = "PyCaxias 2019"
+start = 2019-08-17
+end = 2019-08-17
+location = "Caxias do Sul, RS"
+url = "https://pycaxias.org/"
+
+[[events]]
+name = "Python Cerrado 2019"
+start = 2019-09-05
+end = 2019-09-05
+location = "Goiânia, GO"
+url = "http://pythoncerrado.grupy.goiania.br"
+
+[[events]]
+name = "Python Brasil"
+start = 2019-10-23
+end = 2019-10-28
+location = "Ribeirão Preto, SP"
+url = "https://2019.pythonbrasil.org.br"
+
+[[events]]
+name = "PyPOA"
+start = 2019-11-09
+end = 2019-11-09
+location = "Porto Alegre, RS"
+url = "http://pypoa.org/"

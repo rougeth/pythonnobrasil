@@ -8,11 +8,11 @@ google-auth = "*"
 google-api-python-client = "*"
 attrs = "*"
 ics = "*"
-pyyaml = ">=4.2b1"
 requests = "*"
 ibis = "*"
 "google-auth-httplib2" = "*"
 python-decouple = "*"
+toml = "*"
 
 [dev-packages]
 ipython = "*"
