@@ -13,10 +13,10 @@ before_install:
 
 install:
   - pip install pipenv
-  - pipenv install
+  - pipenv install -d
 
 script:
-  - pytest
+  - pipenv run pytest
 
 before_deploy:
   - openssl aes-256-cbc -K $encrypted_d8f71da6b71d_key -iv $encrypted_d8f71da6b71d_iv -in google_auth.json.enc -out google_auth.json -d
