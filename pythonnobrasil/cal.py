@@ -4,9 +4,8 @@ import attr
 import toml
 from google.oauth2.service_account import Credentials
 from googleapiclient import discovery
-from ics import Calendar as ICSCalendar, Event as ICSEvent
 
-from . import config
+from pythonnobrasil import config
 
 DATE_FORMAT = '%Y-%m-%d'
 
@@ -148,7 +147,7 @@ class GoogleCalendar(Calendar):
         client = self.google_client.events()
 
         payload = self._get_payload(new_event)
-        event = client.update(calendarId=config.GOOGLE_API_CALENDAR_ID,
-                              eventId=old_event.google_id,
-                              body=payload).execute()
+        client.update(calendarId=config.GOOGLE_API_CALENDAR_ID,
+                      eventId=old_event.google_id,
+                      body=payload).execute()
         # TODO: log request

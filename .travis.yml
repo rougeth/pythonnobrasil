@@ -26,4 +26,4 @@ deploy:
   on:
     branch: master
   script:
-    - pipenv run python pythonnobrasil/run.py
+    - pipenv run python -m pythonnobrasil.run
