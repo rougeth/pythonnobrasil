@@ -11,4 +11,4 @@ GOOGLE_API_CALENDAR_ID = config('GOOGLE_API_CALENDAR_ID')
 NETLIFY_TOKEN = config('NETLIFY_TOKEN')
 NETLIFY_SITE_ID = config('NETLIFY_SITE_ID')
 
-CONFERENCIAS_PATH = os.path.join(BASE_DIR.parent, 'conferencias.toml')
+CONFERENCIAS_PATH = BASE_DIR.parent / 'conferencias.toml'
