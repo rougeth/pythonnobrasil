@@ -1,5 +1,5 @@
-import shutil
 import locale
+import shutil
 from calendar import month_abbr
 from datetime import datetime
 
@@ -7,7 +7,6 @@ import ibis
 
 from pythonnobrasil import config, deploy
 from pythonnobrasil.cal import GoogleCalendar, TomlCalendar
-
 
 TODAY = datetime.today()
 

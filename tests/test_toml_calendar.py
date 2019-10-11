@@ -1,5 +1,3 @@
-import toml
-
 from pythonnobrasil import config
 from pythonnobrasil.cal import TomlCalendar
 
