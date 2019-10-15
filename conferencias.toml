@@ -118,34 +118,6 @@ location = "Porto Alegre, RS"
 url = "https://www.facebook.com/AfroPython/"
 
 [[events]]
-name = "Django Girls Passo Fundo"
-start = 2018-09-29
-end = 2018-09-29
-location = "Passo Fundo, RS"
-url = "https://www.djangogirls.org/passofundo"
-
-[[events]]
-name = "Django Girls Pelotas"
-start = 2018-10-06
-end = 2018-10-06
-location = "Pelotas, RS"
-url = "https://www.djangogirls.org/pelotas"
-
-[[events]]
-name = "Python Brasil"
-start = 2018-10-17
-end = 2018-10-22
-location = "Natal, RN"
-url = "https://2018.pythonbrasil.org.br"
-
-[[events]]
-name = "AfroPython 2018"
-start = 2018-11-23
-end = 2018-11-24
-location = "Porto Alegre, RS"
-url = "https://www.facebook.com/AfroPython/"
-
-[[events]]
 name = "Flask Conference"
 start = 2018-08-24
 end = 2018-08-25
@@ -167,11 +139,39 @@ location = "Brasília, DF"
 url = "http://2018.pythoncerrado.org/"
 
 [[events]]
+name = "Django Girls Passo Fundo"
+start = 2018-09-29
+end = 2018-09-29
+location = "Passo Fundo, RS"
+url = "https://www.djangogirls.org/passofundo"
+
+[[events]]
+name = "Django Girls Pelotas"
+start = 2018-10-06
+end = 2018-10-06
+location = "Pelotas, RS"
+url = "https://www.djangogirls.org/pelotas"
+
+[[events]]
+name = "Python Brasil"
+start = 2018-10-17
+end = 2018-10-22
+location = "Natal, RN"
+url = "https://2018.pythonbrasil.org.br"
+
+[[events]]
 name = "PyData Porto Alegre"
 start = 2018-11-08
 end = 2018-11-08
 location = "Porto Alegre, RS"
 url = "https://www.meetup.com/pt-BR/PyData-Porto-Alegre/"
+
+[[events]]
+name = "AfroPython 2018"
+start = 2018-11-23
+end = 2018-11-24
+location = "Porto Alegre, RS"
+url = "https://www.facebook.com/AfroPython/"
 
 [[events]]
 name = "PyData Porto Alegre"
