@@ -1,11 +1,9 @@
 import io
-import os
-from pathlib import Path
 from zipfile import ZipFile
 
 import requests
 
-import config
+from pythonnobrasil import config
 
 NETLIFY_API = 'https://api.netlify.com/api/v1'
 

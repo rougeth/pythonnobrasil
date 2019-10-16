@@ -12,6 +12,7 @@ before_install:
   - sudo dpkg-reconfigure locales
 
 install:
+  - cp .env-sample .env
   - pip install pipenv
   - pipenv install -d
 
@@ -25,4 +26,4 @@ deploy:
   on:
     branch: master
   script:
-    - pipenv run python pythonnobrasil/run.py
+    - pipenv run python -m pythonnobrasil.run

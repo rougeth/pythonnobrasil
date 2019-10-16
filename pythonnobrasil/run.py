@@ -1,15 +1,12 @@
-import shutil
 import locale
+import shutil
 from calendar import month_abbr
 from datetime import datetime
-from pathlib import Path
 
 import ibis
 
-import config
-import deploy
-from cal import GoogleCalendar, YamlCalendar
-
+from pythonnobrasil import config, deploy
+from pythonnobrasil.cal import GoogleCalendar, TomlCalendar
 
 TODAY = datetime.today()
 
@@ -77,9 +74,9 @@ def create_or_update(local_calendar, google_calendar):
 
 
 def main():
-    conferencias = config.BASE_DIR.parent / 'conferencias.yaml'
+    conferencias = config.BASE_DIR.parent / 'conferencias.toml'
 
-    local_calendar = YamlCalendar(conferencias)
+    local_calendar = TomlCalendar(conferencias)
     google_calendar = GoogleCalendar()
 
     create_or_update(local_calendar, google_calendar)

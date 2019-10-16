@@ -1,12 +1,11 @@
 from datetime import datetime, timedelta
 
 import attr
-import yaml
+import toml
 from google.oauth2.service_account import Credentials
 from googleapiclient import discovery
-from ics import Calendar as ICSCalendar, Event as ICSEvent
 
-import config
+from pythonnobrasil import config
 
 DATE_FORMAT = '%Y-%m-%d'
 
@@ -67,15 +66,13 @@ class Calendar:
             return value
 
 
-
-class YamlCalendar(Calendar):
+class TomlCalendar(Calendar):
     def __init__(self, path):
         self.events = []
         self.fetch(path)
 
     def fetch(self, path):
-        with path.open() as events_file:
-            events = yaml.load(events_file.read())
+        events = toml.load(path)['events']
 
         for event_data in events:
             event = Event(**event_data)
@@ -150,7 +147,7 @@ class GoogleCalendar(Calendar):
         client = self.google_client.events()
 
         payload = self._get_payload(new_event)
-        event = client.update(calendarId=config.GOOGLE_API_CALENDAR_ID,
-                              eventId=old_event.google_id,
-                              body=payload).execute()
+        client.update(calendarId=config.GOOGLE_API_CALENDAR_ID,
+                      eventId=old_event.google_id,
+                      body=payload).execute()
         # TODO: log request

@@ -1,7 +1,19 @@
-import yaml
+import pytest
+import toml
 
 
-def test_yaml():
-    with open('conferencias.yaml') as file:
-        confs = yaml.load(file, Loader=yaml.SafeLoader)
-    assert confs
+@pytest.fixture
+def conferencias():
+    filepath = 'conferencias.toml'
+    return toml.load(filepath)
+
+
+def test_toml(conferencias):
+    assert conferencias
+
+
+def test_toml_ordering(conferencias):
+    events = conferencias['events']
+    events_sorted_by_start = sorted(events, key=lambda d: d['start'])
+
+    assert events == events_sorted_by_start
