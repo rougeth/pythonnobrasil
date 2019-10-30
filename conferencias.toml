@@ -244,6 +244,13 @@ location = "Ribeirão Preto, SP"
 url = "https://2019.pythonbrasil.org.br"
 
 [[events]]
+name = "justpython"
+start = 2019-11-09
+end = 2019-11-09
+location = "São Paulo, SP"
+url = "https://justpython.style"
+
+[[events]]
 name = "PyPOA"
 start = 2019-11-09
 end = 2019-11-09
