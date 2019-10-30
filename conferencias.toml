@@ -249,3 +249,11 @@ start = 2019-11-09
 end = 2019-11-09
 location = "Porto Alegre, RS"
 url = "http://pypoa.org/"
+
+[[events]]
+name = "Python Nordeste"
+start = 2020-07-17
+end = 2020-07-19
+location = "Fortaleza, CE"
+url = "https://2020.pythonnordeste.org/"
+
