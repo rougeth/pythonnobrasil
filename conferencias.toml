@@ -258,6 +258,13 @@ location = "Porto Alegre, RS"
 url = "http://pypoa.org/"
 
 [[events]]
+name = "1º PyQui"
+start = 2019-11-23
+end = 2019-11-23
+location = "Cuiabá, MT"
+url = "https://www.meetup.com/pt-BR/DevMatoGrosso/events/266411758/"
+
+[[events]]
 name = "Python Nordeste"
 start = 2020-07-17
 end = 2020-07-19
