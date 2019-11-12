@@ -20,8 +20,9 @@ script:
   - pipenv run pytest
 
 deploy:
-  on:
-    branch: master
+  provider: script
   script:
     - openssl aes-256-cbc -K $encrypted_d8f71da6b71d_key -iv $encrypted_d8f71da6b71d_iv -in google_auth.json.enc -out google_auth.json -d
     - pipenv run python -m pythonnobrasil.run
+  on:
+    branch: master
