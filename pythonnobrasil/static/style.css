@@ -94,3 +94,9 @@ footer > a {
   text-decoration: none;
 }
 .made-with span { color: #f56b6b; }
+
+@media (min-width: 320px) and (max-width: 480px), (min-width: 481px) and (max-width: 767px)  {
+  .calendar {
+    grid-template-columns: none;
+  }
+}
