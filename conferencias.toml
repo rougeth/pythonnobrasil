@@ -265,6 +265,13 @@ location = "Cuiabá, MT"
 url = "https://www.meetup.com/pt-BR/DevMatoGrosso/events/266411758/"
 
 [[events]]
+name = "PyLadies Recife & PUG-PE apresentam - um pedaço de Recife na PyBR 2019"
+start = 2019-11-30
+end = 2019-11-30
+location = "Recife, PE"
+url = "https://www.sympla.com.br/pyladies-recife--pug-pe-apresentam-um-pedaco-de-recife-na-pybr-2019__710578"
+
+[[events]]
 name = "Python Nordeste"
 start = 2020-07-17
 end = 2020-07-19
