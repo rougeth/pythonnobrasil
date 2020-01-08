@@ -278,3 +278,10 @@ end = 2020-07-19
 location = "Fortaleza, CE"
 url = "https://2020.pythonnordeste.org/"
 
+[[events]]
+name = "Python Brasil"
+start = 2020-10-28
+end = 2020-11-02
+location = "Caxias do Sul, RS"
+url = "https://2020.pythonbrasil.org.br"
+
