@@ -272,6 +272,13 @@ location = "Recife, PE"
 url = "https://www.sympla.com.br/pyladies-recife--pug-pe-apresentam-um-pedaco-de-recife-na-pybr-2019__710578"
 
 [[events]]
+name = "PyCaxias"
+start = 2020-03-14
+end = 2020-03-14
+location = "Caxias do Sul, RS"
+url = "https://pycaxias.org/"
+
+[[events]]
 name = "Python Nordeste"
 start = 2020-07-17
 end = 2020-07-19
@@ -284,4 +291,3 @@ start = 2020-10-28
 end = 2020-11-02
 location = "Caxias do Sul, RS"
 url = "https://2020.pythonbrasil.org.br"
-
