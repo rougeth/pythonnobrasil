@@ -291,3 +291,11 @@ start = 2020-10-28
 end = 2020-11-02
 location = "Caxias do Sul, RS"
 url = "https://2020.pythonbrasil.org.br"
+
+
+[[events]]
+name = "Python Sul"
+start = 2020-05-01
+end = 2020-05-03
+location = "Jaraguá do Sul, SC"
+url = "https://pythonsul.org"
