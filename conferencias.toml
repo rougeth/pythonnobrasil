@@ -272,6 +272,13 @@ location = "Recife, PE"
 url = "https://www.sympla.com.br/pyladies-recife--pug-pe-apresentam-um-pedaco-de-recife-na-pybr-2019__710578"
 
 [[events]]
+name = "Django XP"
+start = 2020-03-14
+end = 2020-03-14
+location = "Jundiaí - SP"
+url = "http://2020.djangoxp.python.org.br/"
+
+[[events]]
 name = "PyCaxias"
 start = 2020-03-14
 end = 2020-03-14
