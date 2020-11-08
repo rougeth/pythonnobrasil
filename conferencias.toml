@@ -284,3 +284,10 @@ start = 2020-03-14
 end = 2020-03-14
 location = "Caxias do Sul, RS"
 url = "https://pycaxias.org/"
+
+[[events]]
+name = "Python Brasil 2020"
+start = 2020-11-02
+end = 2020-11-08
+location = "Discord & Youtube"
+url = "https://2020.pythonbrasil.org.br/"
