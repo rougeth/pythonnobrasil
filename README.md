@@ -1,6 +1,6 @@
 # 📅 Eventos Python no Brasil
 
-![image](https://cnet3.cbsistatic.com/hub/i/r/2015/10/20/918344b1-977b-468f-9958-7bdc59cfe90f/thumbnail/770x433/08ea2bb4a2fc7421821cf22d37871dcf/back-to-the-future-time-circuit-board.jpg)
+![image](https://static.wikia.nocookie.net/bttf/images/d/d5/Time_Circuits_BTTF.png)
 
 ## Como adicionar um novo evento na agenda?
 
