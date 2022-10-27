@@ -1,0 +1,41 @@
+name: Deploy
+on:
+  push:
+    branches: "master"
+env:
+  LANG: "pt_BR.UTF-8"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    # Setup Environment
+    - uses: actions/checkout@v3
+    - name: Install poetry
+      run: pipx install poetry
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: 'poetry'
+    - name: Set locale
+      run: |
+        sudo locale-gen pt_BR.UTF-8
+        sudo update-locale LANG=pt_BR.UTF-8
+    # Install Dependencies
+    - name: Install dependencies
+      run: poetry install
+    # Deploy
+    - name: Decrypt key
+      run: |
+        mkdir $GITHUB_WORKSPACE/secrets
+        gpg --quiet --batch --yes --decrypt --passphrase="$GOOGLE_API_PASSWORD" \
+          --output $GITHUB_WORKSPACE/secrets/credentials.json credentials.json.gpg
+      env:
+          GOOGLE_API_PASSWORD: ${{ secrets.GOOGLE_API_PASSWORD }}
+    - name: Deploy
+      run: poetry run python -m pythonnobrasil.run
+      env:
+          GOOGLE_API_AUTH: ${{ secrets.GOOGLE_API_AUTH }}
+          GOOGLE_API_CALENDAR_ID: ${{ secrets.GOOGLE_API_CALENDAR_ID }}
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pythonnobrasil"
+version = "0.1.0"
+description = ""
+authors = ["Marco Rougeth <rougeth@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+tomli = "^2.0.1"
+attr = "^0.3.2"
+toml = "^0.10.2"
+google-auth = "^2.13.0"
+google-api-python-client = "^2.65.0"
+ics = "^0.7.2"
+python-decouple = "^3.6"
+ibis = "^3.2.0"
+
+[tool.poetry.dev-dependencies]
+ipdb = "^0.13.9"
+ipython = "^8.5.0"
+
+[tool.poetry.scripts]
+pythonnobrasil = 'pythonnobrasil.cli:cli'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
