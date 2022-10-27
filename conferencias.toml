@@ -314,6 +314,13 @@ location = "Aracaju, SE"
 url = "https://2022.pythonnordeste.org"
 
 [[events]]
+name = "Python Sul 2022"
+start = 2022-09-09
+end = 2022-09-11
+location = "Jaraguá do Sul, SC"
+url = "https://pythonsul.dev/"
+
+[[events]]
 name = "PyCON US 2023"
 start = 2023-04-19
 end = 2023-04-23
