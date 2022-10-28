@@ -300,13 +300,6 @@ location = "Online"
 url = "https://2021.pythonbrasil.org.br/"
 
 [[events]]
-name = "Python Brasil 2022"
-start = 2022-10-15
-end = 2022-10-23
-location = "Manaus, AM"
-url = "https://2022.pythonbrasil.org.br"
-
-[[events]]
 name = "Python Nordeste 2022"
 start = 2022-08-26
 end = 2022-08-28
@@ -319,6 +312,20 @@ start = 2022-09-09
 end = 2022-09-11
 location = "Jaraguá do Sul, SC"
 url = "https://pythonsul.dev/"
+
+[[events]]
+name = "Python Brasil 2022"
+start = 2022-10-15
+end = 2022-10-23
+location = "Manaus, AM"
+url = "https://2022.pythonbrasil.org.br"
+
+[[events]]
+name = "Pyjamas 2022"
+start = 2022-11-26
+end = 2022-11-27
+location = "Online - YouTube"
+url = "https://pyjamas.live/"
 
 [[events]]
 name = "PyCON US 2023"
