@@ -4,47 +4,51 @@
   <meta charset="UTF-8">
   <title>Python no Brasil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="calendar">
-    {% for month in calendar.values() %}
-    <div class="month">
-      <div class="month-name">{{ month.abbr }}</div>
-      {% if month.events %}
-      <ul>
-        {% for event in month.events %}
-          <a href="{{ event.url }}"><li>{{ event.name }}<span>{{ event.date_range }}</span></li></a>
-        {% endfor %}
-      </ul>
-      {% endif %}
+  <header>
+    <h1>Eventos <span class="highlight verde">Python</span> espalhados pelo <span class="highlight amarelo">Brasil</span><small class="really-small">*</small></h1>
+    <p><small>Última atualização: {{ updated_at }}</small></p>
+  </header>
+  <section>
+    <h2><span class="highlight azul">Próximos Eventos</span></h2>
+    {% for event in events.next %}
+    <div class="event">
+      <div class="event-date">{{ event.display_date }}</div>
+      <div class="event-name">
+        <a href="{{ event.url }}" class="highlight-hover azul">{{ event.name }}</a>
+      </div>
+      <div class="event-location">{{ event.location }}</div>
     </div>
     {% endfor %}
-  </div>
-  <footer>
-    <img class="python-logo" src="logo.png"/></div>
-  <span class="footer-title">Eventos Python no <span class="country">Brasil</span> em <span class="current-year">{{ today.year }}</span></span>
-    <a href="https://github.com/rougeth/pythonnobrasil#-eventos-python-no-brasil">Adicionar evento</a>
-    &nbsp;
-    <a href="https://calendar.google.com/calendar/embed?src=c_d32cabc9241c3fd6cd5f18c2398d42bc17f2566e215ace530ef0552bc6c2f0e4%40group.calendar.google.com&ctz=America%2FSao_Paulo">Incorporar agenda</a>
-    &nbsp;
-    <a href="https://calendar.google.com/calendar/ical/c_d32cabc9241c3fd6cd5f18c2398d42bc17f2566e215ace530ef0552bc6c2f0e4%40group.calendar.google.com/public/basic.ics">(.ics)</a>
-    &nbsp;
-    <a href="https://github.com/rougeth/pythonnobrasil">Github</a>
-    <span class="space"></span>
-    <span class="made-with">Made with <span><3</span> by <a href="https://rgth.co">Marco Rougeth</a>.</span>
-  </footer>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115019492-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-115019492-1');
-  </script>
-
+  </section>
+  <nav>
+    <ul>
+      <li><a class="highlight highlight-hover amarelo" href="https://github.com/rougeth/pythonnobrasil#como-adicionar-um-novo-evento-na-agenda">Adicionar novo evento</a></li>
+      <li><a class="highlight-hover cinza" href="https://calendar.google.com/calendar/embed?src=c_d32cabc9241c3fd6cd5f18c2398d42bc17f2566e215ace530ef0552bc6c2f0e4%40group.calendar.google.com&ctz=America%2FSao_Paulo">Incorporar agenda</a>
+        <a class="highlight-hover cinza" href="https://calendar.google.com/calendar/ical/c_d32cabc9241c3fd6cd5f18c2398d42bc17f2566e215ace530ef0552bc6c2f0e4%40group.calendar.google.com/public/basic.ics">(.ics)</a>
+      </li>
+      <li><a class="highlight-hover cinza" href="https://github.com/rougeth/pythonnobrasil">Repositório .git</a></li>
+      <li><a class="highlight-hover vermelho" href="https://rgth.co/?ref=eventos.python.org.br">rgth.co</a></li>
+    </ul>
+  </nav>
+  {% for year, events in events.per_year.items() %}
+  <section>
+    <h2><span class="highlight cinza">{{ year }}</span></h2>
+    {% for event in events %}
+    <div class="event">
+      <div class="event-date">{{ event.display_date }}</div>
+      <div class="event-name">
+        <a href="{{ event.url }}" class="highlight-hover azul">{{ event.name }}</a>
+      </div>
+      <div class="event-location">{{ event.location }}</div>
+    </div>
+    {% endfor %}
+  </section>
+  {% endfor %}
+  <section>
+    <small>* e pelo mundo :)</small>
+  </section>
 </body>
 </html>

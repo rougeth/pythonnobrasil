@@ -40,15 +40,14 @@ class Event:
 
     @property
     def date_range(self):
-        if self.start.month != self.end.month:
-            return '{} a {}'.format(self.start.strftime('%d/%m'),
-                                    self.end.strftime('%d/%m'))
+        template = "{date:10}"
+        if self.start == self.end:
+            date = template.format(date=self.end.strftime("%b %m"))
+        else:
+            date = f"{self.start.strftime('%b %m')} a {self.end.day}"
 
-        delta = self.end - self.start
-        if delta.days > 0:
-            return '{} a {}'.format(self.start.day, self.end.day)
+        return template.format(date=date)
 
-        return self.start.day
 
 
 class Calendar:
