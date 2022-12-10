@@ -39,7 +39,7 @@ def deploy(output):
 @click.option("--update-external-calendar", is_flag=True)
 @click.option(
     "--output",
-    type=click.Path(exists=True, file_okay=False, path_type=Path),
+    type=click.Path(file_okay=False, path_type=Path),
     default=config.BASE_DIR / "output",
 )
 def build(output: Path, update_external_calendar: bool):
@@ -51,7 +51,7 @@ def build(output: Path, update_external_calendar: bool):
     local_calendar = TomlCalendar(conferencias)
 
     if update_external_calendar:
-        google_calendar = GoogleCalendar(conferencias)
+        google_calendar = GoogleCalendar()
         create_or_update(local_calendar, google_calendar)
 
     prepare_build(static_path, output)

@@ -38,7 +38,7 @@ jobs:
           GOOGLE_API_AUTH: ${{ secrets.GOOGLE_API_AUTH }}
           GOOGLE_API_CALENDAR_ID: ${{ secrets.GOOGLE_API_CALENDAR_ID }}
     - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.0
-        with:
-          branch: gh-pages
-          folder: public/
+      uses: JamesIves/github-pages-deploy-action@v4.3.0
+      with:
+        branch: gh-pages
+        folder: public/
