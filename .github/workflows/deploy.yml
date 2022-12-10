@@ -32,10 +32,13 @@ jobs:
           --output $GITHUB_WORKSPACE/secrets/credentials.json credentials.json.gpg
       env:
           GOOGLE_API_PASSWORD: ${{ secrets.GOOGLE_API_PASSWORD }}
-    - name: Deploy
-      run: poetry run python -m pythonnobrasil.run
+    - name: Build
+      run: poetry run pythonnobrasil build --update-external-calendar --output ./public
       env:
           GOOGLE_API_AUTH: ${{ secrets.GOOGLE_API_AUTH }}
           GOOGLE_API_CALENDAR_ID: ${{ secrets.GOOGLE_API_CALENDAR_ID }}
-          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.0
+        with:
+          branch: gh-pages
+          folder: public/

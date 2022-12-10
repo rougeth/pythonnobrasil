@@ -7,7 +7,7 @@ from googleapiclient import discovery
 
 from pythonnobrasil import config
 
-DATE_FORMAT = '%Y-%m-%d'
+DATE_FORMAT = "%Y-%m-%d"
 
 
 def _date_converter(value):
@@ -39,15 +39,8 @@ class Event:
         return different_fields
 
     @property
-    def date_range(self):
-        template = "{date:10}"
-        if self.start == self.end:
-            date = template.format(date=self.end.strftime("%b %m"))
-        else:
-            date = f"{self.start.strftime('%b %m')} a {self.end.day}"
-
-        return template.format(date=date)
-
+    def display_date(self):
+        return self.start.strftime("%b %m")
 
 
 class Calendar:
@@ -71,7 +64,7 @@ class TomlCalendar(Calendar):
         self.fetch(path)
 
     def fetch(self, path):
-        events = toml.load(path)['events']
+        events = toml.load(path)["events"]
 
         for event_data in events:
             event = Event(**event_data)
@@ -79,7 +72,7 @@ class TomlCalendar(Calendar):
 
 
 class GoogleCalendar(Calendar):
-    GOOGLE_API_SCOPES = ['https://www.googleapis.com/auth/calendar']
+    GOOGLE_API_SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
     def __init__(self):
         self.events = []
@@ -88,32 +81,33 @@ class GoogleCalendar(Calendar):
     @property
     def credentials(self):
         return Credentials.from_service_account_file(
-            config.GOOGLE_API_AUTH, scopes=self.GOOGLE_API_SCOPES)
+            config.GOOGLE_API_AUTH, scopes=self.GOOGLE_API_SCOPES
+        )
 
     @property
     def google_client(self):
-        return discovery.build('calendar', 'v3', credentials=self.credentials)
+        return discovery.build("calendar", "v3", credentials=self.credentials)
 
     def get_google_calendar_events(self):
         client = self.google_client.events()
         events = client.list(calendarId=config.GOOGLE_API_CALENDAR_ID).execute()
-        return events['items']
+        return events["items"]
 
     def fetch(self):
         events = self.get_google_calendar_events()
         for event_data in events:
-            if event_data['status'] != 'confirmed':
+            if event_data["status"] != "confirmed":
                 continue
 
             event = Event(
-                name=event_data['summary'],
-                start=event_data.get('start').get('date'),
-                end=event_data.get('end').get('date'),
-                location=event_data.get('location'),
-                url=event_data.get('description'),
+                name=event_data["summary"],
+                start=event_data.get("start").get("date"),
+                end=event_data.get("end").get("date"),
+                location=event_data.get("location"),
+                url=event_data.get("description"),
             )
 
-            event.google_id = event_data['id']
+            event.google_id = event_data["id"]
             if event.end:
                 event.end = event.end - timedelta(days=1)
 
@@ -123,14 +117,14 @@ class GoogleCalendar(Calendar):
         one_day = timedelta(days=1)
         end_date = event.end + one_day
         return {
-            'summary': event.name,
-            'location': event.location,
-            'description': event.url,
-            'start': {
-                'date': event.start.strftime(DATE_FORMAT),
+            "summary": event.name,
+            "location": event.location,
+            "description": event.url,
+            "start": {
+                "date": event.start.strftime(DATE_FORMAT),
             },
-            'end': {
-                'date': end_date.strftime(DATE_FORMAT),
+            "end": {
+                "date": end_date.strftime(DATE_FORMAT),
             },
         }
 
@@ -138,15 +132,18 @@ class GoogleCalendar(Calendar):
         client = self.google_client.events()
 
         payload = self._get_payload(event)
-        event = client.insert(calendarId=config.GOOGLE_API_CALENDAR_ID,
-                              body=payload).execute()
+        event = client.insert(
+            calendarId=config.GOOGLE_API_CALENDAR_ID, body=payload
+        ).execute()
         # TODO: log request
 
     def update_event(self, old_event, new_event):
         client = self.google_client.events()
 
         payload = self._get_payload(new_event)
-        client.update(calendarId=config.GOOGLE_API_CALENDAR_ID,
-                      eventId=old_event.google_id,
-                      body=payload).execute()
+        client.update(
+            calendarId=config.GOOGLE_API_CALENDAR_ID,
+            eventId=old_event.google_id,
+            body=payload,
+        ).execute()
         # TODO: log request

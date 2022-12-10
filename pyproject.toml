@@ -17,6 +17,7 @@ python-decouple = "^3.6"
 ibis = "^3.2.0"
 watchdog = "^2.2.0"
 loguru = "^0.6.0"
+rcssmin = "^1.1.1"
 
 [tool.poetry.dev-dependencies]
 ipdb = "^0.13.9"
