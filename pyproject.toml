@@ -21,7 +21,7 @@ rcssmin = "^1.1.1"
 
 [tool.poetry.dev-dependencies]
 ipdb = "^0.13.9"
-ipython = "^8.5.0"
+ipython = "^8.10.0"
 
 [tool.poetry.scripts]
 pythonnobrasil = 'pythonnobrasil.cli:cli'
