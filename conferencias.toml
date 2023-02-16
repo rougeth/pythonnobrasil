@@ -339,6 +339,4 @@ name = "PyCaxias 2023"
 start = 2023-03-11
 end = 2023-03-11
 location = "Caxias do Sul, RS"
-url = "pycaxias.com.br"
-
-
+url = "https://pycaxias.com.br"
