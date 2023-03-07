@@ -40,7 +40,7 @@ class Event:
 
     @property
     def display_date(self):
-        return self.start.strftime("%b %m")
+        return self.start.strftime("%b %d")
 
 
 class Calendar:
