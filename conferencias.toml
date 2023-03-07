@@ -347,3 +347,10 @@ start = 2023-10-30
 end = 2023-11-05
 location = "Caxias do Sul, RS"
 url = "https://2023.pythonbrasil.org.br"
+
+[[events]]
+name = "#43 Coding Dojo Python @ Arquivei - grupy-sanca"
+start = 2023-03-16
+end = 2023-03-16
+location = "São Carlos, SP"
+url = "https://www.meetup.com/pt-BR/grupy-sanca/events/292080370/"
