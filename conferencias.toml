@@ -349,6 +349,13 @@ location = "Caxias do Sul, RS"
 url = "https://2023.pythonbrasil.org.br"
 
 [[events]]
+name = "Open Data Day Recife 2023"
+start = 2023-03-11
+end = 2023-03-11
+location = "Recife, PE"
+url = "https://linktr.ee/pyladiesrecife"
+
+[[events]]
 name = "#43 Coding Dojo Python @ Arquivei - grupy-sanca"
 start = 2023-03-16
 end = 2023-03-16
