@@ -361,3 +361,24 @@ start = 2023-03-16
 end = 2023-03-16
 location = "São Carlos, SP"
 url = "https://www.meetup.com/pt-BR/grupy-sanca/events/292080370/"
+
+[[events]]
+name = "Python Sul 2023"
+start = 2023-09-22
+end = 2023-09-23
+location = "Balneário Camboriú, Santa Catarina"
+url = "https://pythonsul.dev/"
+
+[[events]]
+name = "Python Nordeste 2023"
+start = 2023-09-22
+end = 2023-09-24
+location = "Salvador"
+url = "https://2023.pythonnordeste.org/"
+
+[[events]]
+name = "Python Norte 2023"
+start = 2023-09-29
+end = 2023-09-30
+location = "Manaus, AM"
+url = "https://2023.pythonnorte.org/"
