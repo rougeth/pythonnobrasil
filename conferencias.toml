@@ -405,7 +405,7 @@ location = "Caxias do Sul, RS"
 url = "https://pycaxias.com.br/"
 
 [[events]]
-name = "Python Serrado 2024 + Plone Conference"
+name = "Python Cerrado 2024 + Plone Conference"
 start = 2024-11-25
 end = 2024-12-01
 location = "Brasilia, DF"
