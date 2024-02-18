@@ -384,21 +384,21 @@ location = "Manaus, AM"
 url = "https://2023.pythonnorte.org/"
 
 [[events]]
-name = "Python Brasil 2024"
+name = "Python Brasil"
 start = 2024-10-16
 end = 2024-10-21
 location = "Rio de Janeiro, RJ"
 url = "https://2024.pythonbrasil.org.br/"
 
 [[events]]
-name = "Python Sul 2024"
+name = "Python Sul"
 start = 2024-09-13
 end = 2024-09-15
 location = "Florianópolis, SC"
 url = "https://sul.python.org.br/"
 
 [[events]]
-name = "PyCaxias 2024"
+name = "PyCaxias"
 start = 2024-04-20
 end = 2024-04-20
 location = "Caxias do Sul, RS"
