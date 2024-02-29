@@ -30,6 +30,8 @@ def get_context(calendar):
         else:
             events["per_year"][event.start.year].append(event)
 
+    events["next"] = sorted(events["next"], key=lambda e: e.start)
+
     events["per_year"] = {
         year: sorted(events, key=lambda e: e.start)
         for year, events in events["per_year"].items()
