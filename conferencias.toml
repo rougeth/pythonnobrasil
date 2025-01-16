@@ -424,3 +424,9 @@ start = 2024-05-30
 end = 2024-06-02
 location = "São Carlos, SP"
 url = "https://www.instagram.com/pythonsudeste/"
+
+name = "Python Norte 2024"
+start = 2024-09-27
+end = 2024-09-28
+location = "Itacoatiara, AM"
+url = "https://2024.pythonnorte.org/"
