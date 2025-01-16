@@ -425,8 +425,37 @@ end = 2024-06-02
 location = "São Carlos, SP"
 url = "https://www.instagram.com/pythonsudeste/"
 
+[[events]]
 name = "Python Norte 2024"
 start = 2024-09-27
 end = 2024-09-28
 location = "Itacoatiara, AM"
 url = "https://2024.pythonnorte.org/"
+
+[[events]]
+name = "PyCaxias"
+start = 2025-05-17
+end = 2025-05-17
+location = "Caxias do Sul, RS"
+url = "https://pycaxias.com.br/"
+
+[[events]]
+name = "Python Sul"
+start = 2025-11-21
+end = 2025-12-23
+location = "Porto Alegre, RS"
+url = "https://sul.python.org.br/"
+
+[[events]]
+name = "Python Brasil"
+start = 2025-10-21
+end = 2025-10-27
+location = "São Paulo, SP"
+url = "https://2025.pythonbrasil.org.br"
+
+[[events]]
+name = "Python Cerrado"
+start = 2025-07-31
+end = 2025-08-01
+location = "Brasília, DF"
+url = "https://www.eventbrite.com.br/e/python-cerrado-2025-tickets-1098869210389"
