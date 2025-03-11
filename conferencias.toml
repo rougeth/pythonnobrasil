@@ -459,3 +459,10 @@ start = 2025-07-31
 end = 2025-08-01
 location = "Brasília, DF"
 url = "https://www.eventbrite.com.br/e/python-cerrado-2025-tickets-1098869210389"
+
+[[events]]
+name = "Caipyra"
+start = 2025-06-19
+end = 2025-06-22
+location = "Ribeirão Preto, SP"
+url = "https://2025.caipyra.python.org.br"
