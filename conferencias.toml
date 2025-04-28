@@ -466,3 +466,10 @@ start = 2025-06-19
 end = 2025-06-22
 location = "Ribeirão Preto, SP"
 url = "https://2025.caipyra.python.org.br"
+
+[[events]]
+name = "Python Sudeste"
+start = 2025-05-30
+end = 2025-06-02
+location = "Belo Horizonte, MG"
+url = "https://www.instagram.com/pythonsudeste/"
