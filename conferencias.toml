@@ -442,7 +442,7 @@ url = "https://pycaxias.com.br/"
 [[events]]
 name = "Python Sul"
 start = 2025-11-21
-end = 2025-12-23
+end = 2025-11-23
 location = "Porto Alegre, RS"
 url = "https://sul.python.org.br/"
 
