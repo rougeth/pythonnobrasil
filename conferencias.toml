@@ -473,3 +473,31 @@ start = 2025-05-30
 end = 2025-06-02
 location = "Belo Horizonte, MG"
 url = "https://www.instagram.com/pythonsudeste/"
+
+[[events]]
+name = "Python Sul"
+start = 2026-04-18
+end = 2026-04-21
+location = "Londrina, PR"
+url = "https://sul.python.org.br/"
+
+[[events]]
+name = "Caipyra"
+start = 2026-06-04
+end = 2026-06-07
+location = "São Carlos, SP"
+url = "https://2026.caipyra.python.org.br/"
+
+[[events]]
+name = "Python Norte"
+start = 2026-07-03
+end = 2026-07-05
+location = "Anaindeua, PA"
+url = "https://pythonnorte.org/"
+
+[[events]]
+name = "Python Brasil"
+start = 2026-10-14
+end = 2026-10-19
+location = "Florianópolis, SC"
+url = "https://2026.pythonbrasil.org.br/"
